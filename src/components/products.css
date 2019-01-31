@@ -1,0 +1,24 @@
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2rem 0;
+}
+
+.product-item { 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin: 1rem;
+
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+}
+
+.cat-desc {
+  margin: 0;
+  padding: 0;
+}
