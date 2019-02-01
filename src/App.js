@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import inventory, { categories } from './inventory'
 import './App.css';
 import Categories from './components/categories';
-import Products from './components/products';
+import Product from './components/product';
 
 class App extends Component {
   constructor(props) {
@@ -34,15 +34,9 @@ class App extends Component {
           this.state.currentCategory === null
         )
       })
-      .map(({ id, name, category, description, price }) => 
-        <Products  
-          id = { id } 
-          name = { name } 
-          category = { category } 
-          description = { description } 
-          price = { price} 
-        /> 
-      )
+      .map((item) => {
+        return <Product item ={ item } /> 
+      })
   }
 
   render() {
